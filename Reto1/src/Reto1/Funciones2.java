@@ -1,6 +1,6 @@
 package Reto1;
 
-import java.util.Scanner;
+
 
 public class Funciones2 {
 	

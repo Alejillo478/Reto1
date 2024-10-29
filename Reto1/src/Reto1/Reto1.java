@@ -6,6 +6,7 @@ public class Reto1 {
 
 	public static void main(String[] args) {
 
+
 		Scanner sc = new Scanner(System.in);
 		int n;
 
@@ -56,7 +57,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			int resultado = sumar(n1, n2);
+			int resultado = Funciones1.sumar(n1, n2);
 			System.out.println(resultado);
 			break;
 
@@ -80,7 +81,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			int resultado2 = restar(n3, n4);
+			int resultado2 = Funciones1.restar(n3, n4);
 			System.out.println(resultado2);
 			break;
 
@@ -104,7 +105,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			int resultado3 = multiplico(n5, n6);
+			int resultado3 = Funciones2.multiplico(n5, n6);
 			System.out.println(resultado3);
 			break;
 
@@ -138,7 +139,7 @@ public class Reto1 {
 			} while (true);
 			}while (n8==0);
 			
-			int resultado4 = dividir(n7, n8);
+			int resultado4 = Funciones2.dividir(n7, n8);
 			System.out.println(resultado4);
 			break;
 
@@ -158,7 +159,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			boolean resultado5 = esPar(n9);
+			boolean resultado5 = Funciones1.esPar(n9);
 			System.out.println(resultado5);
 			break;
 
@@ -178,7 +179,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			boolean resultado6 = esImpar(n10);
+			boolean resultado6 = Funciones1.esImpar(n10);
 			System.out.println(resultado6);
 			break;
 
@@ -198,7 +199,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			boolean resultado7 = numPositivo(n11);
+			boolean resultado7 = Funciones2.numPositivo(n11);
 			System.out.println(resultado7);
 			break;
 
@@ -218,7 +219,7 @@ public class Reto1 {
 				}
 			} while (true);
 
-			boolean resultado8 = numNegativo(n12);
+			boolean resultado8 = Funciones2.numNegativo(n12);
 			System.out.println(resultado8);
 			break;
 
@@ -227,48 +228,5 @@ public class Reto1 {
 		sc.close();
 	}
 
-	public static int sumar(int a, int b) {
-		return (a + b);
-	}
-
-	public static int restar(int a, int b) {
-
-		return (a - b);
-
-	}
-
-	public static boolean esPar(int a)
-
-	{
-		return a % 2 == 0;
-	}
-
-	public static boolean esImpar(int a) {
-
-		return a % 2 != 0;
-
-	}
-
-	public static int multiplico(int n1, int n2) {
-		return (n1 * n2);
-	}
-
-	public static int dividir(int n1, int n2) {
-
-		return (n1 / n2);
-	}
-
-	public static boolean numPositivo(int n1) {
-		if (n1 > 0)
-			return true;
-		else
-			return false;
-	}
-
-	public static boolean numNegativo(int n2) {
-		if (n2 < 0)
-			return true;
-		else
-			return false;
-	}
+	
 }
